@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Patrick Lewis Wilkie website</title>
-<link rel="stylesheet" type="text/css" href="main.css">
+<header>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Patrick Lewis Wilkie website</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	 <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-<script>
-function allowDrop(ev) {
-    ev.preventDefault();
-}
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-</script>
-</head>
+</header>
 <body>
-	
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="row">
+      <div class="col s1"></div>
+	  <div class="col s1">P</div>
+      <div class="col s1">A</div>
+      <div class="col s1">T</div>
+	  
+      <div class="col s1"></div>
+      <div class="col s1"></div>
+      <div class="col s1">L</div>
+      <div class="col s1">E</div>
+      <div class="col s1">W</div>
+      <div class="col s1">I</div>
+      <div class="col s1">S</div>
+      <div class="col s1"></div>
+      
+    	</div>
+		 <div class='row'>
+		<div class="col s6"><img src="resources/wilkie.gif"></div>	 
+		  <div class="col s3"></div>
+	</div>
+  </body>
 
-<img id="drag1" src="resources/wilkie.gif" draggable="true"
-ondragstart="drag(event)" width="336" height="69">
-
-</body>
-	
 </html>
