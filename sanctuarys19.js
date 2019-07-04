@@ -35,13 +35,16 @@ function draw() {
             }
             arc(0, 0, r, r, n, n + level/360*TWO_PI);
          }
-         let m = 23*mouseY/height;
+         let m = 0;
          if(mouseY > height){
             m=1;
             }
          
          else if(mouseY < 0){
          m=0;
+         }
+         else{
+         m = 23 * mouseY / height;
          }
          r = r - barwidth + m; //21
       } 
