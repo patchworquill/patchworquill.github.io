@@ -27,11 +27,11 @@ function draw() {
          for(let n = -PI/2+mouseX; n <= TWO_PI - PI/2 + mouseX; n = n + level/360*TWO_PI){
             //fill color in alternating black and white segments!
             if(i==true){
-               fill(light);
+               fill(255);
                i = false;
             }
             else{
-               fill(dark);
+               fill(0);
                i = true;
             }
             arc(0, 0, r, r, n, n + level/360*TWO_PI);
