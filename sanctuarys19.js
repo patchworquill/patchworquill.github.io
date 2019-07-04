@@ -9,6 +9,7 @@ function draw() {
    //stroke(0);
    let margin = 40; 
    let ymargin = 10; // processing top bar height 
+
    let x = screen.width / 2 ; let y = screen.height / 2 ;
    //rotate(PI/2.0);
    translate(x,y);
@@ -17,6 +18,7 @@ function draw() {
    // 24 levels including inner circle
    //int level = 1;
    let r = x;
+   let barwidth = r / 24;
    
    // level start on exterior (max radius), at 1 degree = 360 segments, moves inward.
    for(let level = 1; level <= 360; level = level + 1){  
@@ -36,7 +38,8 @@ function draw() {
             }
             arc(0, 0, r, r, n, n + level/360*TWO_PI);
          }
-         r = r - 21;
+         
+         r = r - barwidth + 23*mouseY/screen.height; //21
       } 
    }   
 }
