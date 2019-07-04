@@ -9,7 +9,7 @@ function draw() {
    //stroke(0);
    let margin = 40; 
    let ymargin = 10; // processing top bar height 
-   let x = width / 2 ; let y = height / 2 - ymargin;
+   let x = screen.width / 2 ; let y = screen.height / 2 ;
    //rotate(PI/2.0);
    translate(x,y);
    
