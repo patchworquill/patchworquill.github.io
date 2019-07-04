@@ -1,10 +1,11 @@
 function setup() {
    let canvas = createCanvas(screen.height, screen.width);
    canvas.parent('sketch-holder');
+   let dark = 0; let light = 255;
 }
 
 function draw() {
-   background(100);
+   background(light);
    //stroke(0);
    let margin = 40; 
    let ymargin = 10; // processing top bar height 
@@ -26,11 +27,11 @@ function draw() {
          for(let n = -PI/2+mouseX; n <= TWO_PI - PI/2 + mouseX; n = n + level/360*TWO_PI){
             //fill color in alternating black and white segments!
             if(i==true){
-               fill(255);
+               fill(light);
                i = false;
             }
             else{
-               fill(0);
+               fill(dark);
                i = true;
             }
             arc(0, 0, r, r, n, n + level/360*TWO_PI);
