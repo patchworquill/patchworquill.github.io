@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-   background(100);
+   background(255);
    //stroke(0);
    let margin = 40; 
    let ymargin = 10; // processing top bar height 
