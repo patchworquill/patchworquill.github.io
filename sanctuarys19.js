@@ -1,5 +1,6 @@
 function setup() {
-   createCanvas(screen.height, screen.width);
+   let canvas = createCanvas(screen.height, screen.width);
+   canvas.parent('sketch-holder');
 }
 
 function draw() {
@@ -37,4 +38,8 @@ function draw() {
          r = r - 21;
       } 
    }   
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
