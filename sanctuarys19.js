@@ -6,17 +6,14 @@ function setup() {
 
 function draw() {
    background(255);
-   //stroke(0);
-   let margin = 40; 
    let ymargin = 10; // processing top bar height 
 
-   let x = screen.width / 2 ; let y = screen.height / 2 ;
+   let x = width / 2 ; let y = height / 2 ;
    //rotate(PI/2.0);
    translate(x,y);
    
    // must draw inward from outside
    // 24 levels including inner circle
-   //int level = 1;
    let r = x;
    let barwidth = r / 24;
    
