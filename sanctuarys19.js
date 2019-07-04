@@ -36,12 +36,12 @@ function draw() {
             arc(0, 0, r, r, n, n + level/360*TWO_PI);
          }
          let m = 23*mouseY/screen.height;
-         if(m > 24){
-            m=24;
+         if(m < 1){
+            m=1;
             }
-         else if(m<1){
-         m=1;
-         }
+         //else if(m<1){
+         //m=1;
+         //}
          r = r - barwidth + ; //21
       } 
    }   
