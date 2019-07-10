@@ -14,7 +14,13 @@ function draw() {
 
    // must draw inward from outside
    // 24 levels including inner circle
-   let r = x;
+   if(x<y){
+      let r = x;
+   }
+   else{
+     let r = y;
+   }
+
    let barwidth = r / 24;
 
    // level start on exterior (max radius), at 1 degree = 360 segments, moves inward.
@@ -52,5 +58,5 @@ function draw() {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight*2/3);
 }
