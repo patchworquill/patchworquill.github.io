@@ -1,24 +1,24 @@
 function setup() {
-   let canvas = createCanvas(width, height); //screen.width, screen.height
+   let canvas = createCanvas(screen.width, screen.height);
    canvas.parent('sketch-holder');
    let dark = 0; let light = 255;
 }
 
 function draw() {
    background(255);
-   let ymargin = 10; // processing top bar height 
+   let ymargin = 10; // processing top bar height
 
    let x = width / 2 ; let y = height / 2 ;
    //rotate(PI/2.0);
    translate(x,y);
-   
+
    // must draw inward from outside
    // 24 levels including inner circle
    let r = x;
    let barwidth = r / 24;
-   
+
    // level start on exterior (max radius), at 1 degree = 360 segments, moves inward.
-   for(let level = 1; level <= 360; level = level + 1){  
+   for(let level = 1; level <= 360; level = level + 1){
       //print("ok");
       if(360 % level == 0){
          let i = true; // used for segment fill color
@@ -39,7 +39,7 @@ function draw() {
          if(mouseY > height){
             m=1;
             }
-         
+
          else if(mouseY < 0){
          m=0;
          }
@@ -47,8 +47,8 @@ function draw() {
          m = 23 * mouseY / height;
          }
          r = r - barwidth + m; //21
-      } 
-   }   
+      }
+   }
 }
 
 function windowResized() {
