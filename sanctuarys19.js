@@ -8,7 +8,7 @@ function draw() {
    background(255);
    let ymargin = 10; // processing top bar height
 
-   let x = width / 2 ; let y = height / 2 ;
+   let x = windowWidth / 2 ; let y = windowHeight / 2 ;
    //rotate(PI/2.0);
    translate(x,y);
 
