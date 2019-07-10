@@ -1,5 +1,5 @@
 function setup() {
-   let canvas = createCanvas(screen.height, screen.width);
+   let canvas = createCanvas(screen.width, screen.height);
    canvas.parent('sketch-holder');
    let dark = 0; let light = 255;
 }
