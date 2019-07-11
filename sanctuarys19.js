@@ -36,7 +36,12 @@ function draw() {
             }
             arc(0, 0, r, r, n, n + level/360*TWO_PI);
          }
-         r = r - barwidth + 23*mouseY/screen.height;
+         if (mouseY < windowHeight and mouseY > 0){
+         r = r - barwidth + 23*mouseY/windowWidth;
+         }
+         else {
+           r = r - barwidth;
+         }
       }
    }
 }
