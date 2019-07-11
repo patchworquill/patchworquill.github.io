@@ -46,6 +46,6 @@ function draw() {
    }
 }
 
-function windowResized() {
+function windowResized(canvas) {
   canvas.resizeCanvas(windowWidth, windowHeight);
 }
