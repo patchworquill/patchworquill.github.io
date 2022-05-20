@@ -80,7 +80,7 @@
 			});
 
 		var player = context.createBufferSource();
-		player.buffer = audiox;
+		player.buffer = audio;
 		player.connect(context.destination);
 		player.start(context.currentTime);
 		// source.disconnect(context.destination);

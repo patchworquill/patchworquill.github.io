@@ -22,26 +22,26 @@ function drop(ev) {
 </script>
 </head>
 <body>
-	
+
 <canvas id="myCanvas" width="100%" height="80%" style="border:0px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 
 <script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-var x = 40;
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var x = 40;
 
-// Create gradient
-var grd = ctx.createRadialGradient(50%,40%,x,50%,30%,10%);
-grd.addColorStop(0,"dimgray");
-grd.addColorStop(1,"lavender");
+  // Create gradient
+  var grd = ctx.createRadialGradient(50% 40% x 50% 30%,10%);
+  grd.addColorStop(0,"dimgray");
+  grd.addColorStop(1,"lavender");
 
 
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10,10,670,600);
+  // Fill with gradient
+  ctx.fillStyle = grd;
+  ctx.fillRect(10,10,670,600);
 </script>
 
 </body>
-	
+
 </html>
